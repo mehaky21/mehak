@@ -1,4 +1,4 @@
-# Data mining
+## Data mining
 "Web mining" redirects here. For web browser-based cryptocurrency mining, see cryptocurrency.
 Part of a series on
 Machine learning
@@ -26,7 +26,7 @@ The actual data mining task is the semi-automatic or automatic analysis of large
 The difference between data analysis and data mining is that data analysis is used to test models and hypotheses on the dataset, e.g., analyzing the effectiveness of a marketing campaign, regardless of the amount of data. In contrast, data mining uses machine learning and statistical models to uncover clandestine or hidden patterns in a large volume of data.[10]
 The related terms data dredging, data fishing, and data snooping refer to the use of data mining methods to sample parts of a larger population data set that are (or may be) too small for reliable statistical inferences to be made about the validity of any patterns discovered. These methods can, however, be used in creating new hypotheses to test against the larger data populations.
 
-# Process
+## Process
 The knowledge discovery in databases (KDD) process is commonly defined with the stages:
 
 Selection
@@ -50,7 +50,7 @@ Pre-processing
 Before data mining algorithms can be used, a target data set must be assembled. As data mining can only uncover patterns actually present in the data, the target data set must be large enough to contain these patterns while remaining concise enough to be mined within an acceptable time limit. A common source for data is a data mart or data warehouse. Pre-processing is essential to analyze the multivariate data sets before data mining. The target set is then cleaned. Data cleaning removes the observations containing noise and those with missing data.
 
 Data mining
-Data mining involves six common classes of tasks:[5]
+### Data mining involves six common classes of tasks:[5]
 
 Anomaly detection (outlier/change/deviation detection) – The identification of unusual data records, that might be interesting or data errors that require further investigation.
 Association rule learning (dependency modeling) – Searches for relationships between variables. For example, a supermarket might gather data on customer purchasing habits. Using association rule learning, the supermarket can determine which products are frequently bought together and use this information for marketing purposes. This is sometimes referred to as market basket analysis.
@@ -66,3 +66,37 @@ Data mining can unintentionally be misused, producing results that appear to be 
 The final step of knowledge discovery from data is to verify that the patterns produced by the data mining algorithms occur in the wider data set. Not all patterns found by the algorithms are necessarily valid. It is common for data mining algorithms to find patterns in the training set which are not present in the general data set. This is called overfitting. To overcome this, the evaluation uses a test set of data on which the data mining algorithm was not trained. The learned patterns are applied to this test set, and the resulting output is compared to the desired output. For example, a data mining algorithm trying to distinguish "spam" from "legitimate" e-mails would be trained on a training set of sample e-mails. Once trained, the learned patterns would be applied to the test set of e-mails on which it had not been trained. The accuracy of the patterns can then be measured from how many e-mails they correctly classify. Several statistical methods may be used to evaluate the algorithm, such as ROC curves.
 
 If the learned patterns do not meet the desired standards, it is necessary to re-evaluate and change the pre-processing and data mining steps. If the learned patterns do meet the desired standards, then the final step is to interpret the learned patterns and turn them into knowledge.
+## Data Mining Techniques
+Data mining refers to extracting or mining knowledge from large amounts of data. In other words, Data mining is the science, art, and technology of discovering large and complex bodies of data in order to discover useful patterns. Theoreticians and practitioners are continually seeking improved techniques to make the process more efficient, cost-effective, and accurate. Many other terms carry a similar or slightly different meaning to data mining such as knowledge mining from data, knowledge extraction, data/pattern analysis data dredging.
+
+Data mining treats as a synonym for another popularly used term, Knowledge Discovery from Data, or KDD. In others view data mining as simply an essential step in the process of knowledge discovery, in which intelligent methods are applied in order to extract data patterns.
+
+Gregory Piatetsky-Shapiro coined the term “Knowledge Discovery in Databases” in 1989. However, the term ‘data mining’ became more popular in the business and press communities. Currently, Data Mining and Knowledge Discovery are used interchangeably.
+
+Nowadays, data mining is used in almost all places where a large amount of data is stored and processed.
+Knowledge Discovery From Data Consists of the Following Steps:
+
+Data cleaning (to remove noise or irrelevant data).
+Data integration (where multiple data sources may be combined).
+Data selection (where data relevant to the analysis task are retrieved from the database).
+Data transformation (where data are transmuted or consolidated into forms appropriate for mining by performing summary or aggregation functions, for sample).
+Data mining (an important process where intelligent methods are applied in order to extract data patterns).
+Pattern evaluation (to identify the fascinating patterns representing knowledge based on some interestingness measures).
+Knowledge presentation (where knowledge representation and visualization techniques are used to present the mined knowledge to the user).
+1. Association
+Association analysis is the finding of association rules showing attribute-value conditions that occur frequently together in a given set of data. Association analysis is widely used for a market basket or transaction data analysis. Association rule mining is a significant and exceptionally dynamic area of data mining research. One method of association-based classification, called associative classification, consists of two steps. In the main step, association instructions are generated using a modified version of the standard association rule mining algorithm known as Apriori. The second step constructs a classifier based on the association rules discovered.
+
+2. Classification
+Classification is the processing of finding a set of models (or functions) that describe and distinguish data classes or concepts, for the purpose of being able to use the model to predict the class of objects whose class label is unknown. The determined model depends on the investigation of a set of training data information (i.e. data objects whose class label is known). The derived model may be represented in various forms, such as classification (if – then) rules, decision trees, and neural networks. Data Mining has a different type of classifier: 
+
+Decision Tree
+SVM(Support Vector Machine)
+Generalized Linear Models
+Bayesian classification:
+Classification by Backpropagation
+K-NN Classifier
+Rule-Based Classification
+Frequent-Pattern Based Classification
+Rough set theory
+Fuzzy Logic
+Decision Trees: A decision tree is a flow-chart-like tree structure, where each node represents a test on an attribute value, each branch denotes an outcome of a test, and tree leaves represent classes or class distributions. Decision trees can be easily transformed into classification rules. Decision tree enlistment is a nonparametric methodology for building classification models. 
